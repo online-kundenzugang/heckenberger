@@ -257,7 +257,7 @@
   <div style="background: #f9f9f9; padding: 16px 20px; border-radius: 12px; margin-bottom: 30px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
     <div style="display: flex; align-items: center; gap: 10px;">
       <i class="fa-solid fa-user" style="color: red; font-size: 22px;"></i>
-      <h2 style="margin: 0; font-size: 20px;"><strong>Jens Heidel</strong></h2>
+      <h2 style="margin: 0; font-size: 20px;"><strong>Anton Juergen Heckenberger</strong></h2>
     </div>
     <div style="text-align: right; font-size: 14px;">
       <strong>Kontostand:</strong><br>
@@ -279,9 +279,9 @@
           <i class="fa-solid fa-house" style="color: red;"></i>
           <strong style="font-size: 16px;">Anschrift</strong>
         </div>
-        <p><strong>Straße:</strong> Fasanenweg 37</p>
-        <p><strong>PLZ:</strong> 65307</p>
-        <p><strong>Ort:</strong> Bad Schwalbach</p>
+        <p><strong>Straße:</strong> Edmund-Kohler-Straße 55</p>
+        <p><strong>PLZ:</strong> 73433</p>
+        <p><strong>Ort:</strong> Aalen</p>
         <p><strong>Land:</strong> Deutschland</p>
       </div>
 
@@ -314,10 +314,10 @@
           <strong style="font-size: 16px;">Paketdetails</strong>
         </div>
         <p><strong>Paket:</strong> Individuell</p>
-        <p><strong>Anlagebetrag:</strong> EUR 95.000,00</p>
+        <p><strong>Anlagebetrag:</strong> EUR 50.000,00</p>
         <p><strong>Laufzeit:</strong> 12 Monate</p> <!-- ✅ manuell anpassbar -->
-        <p><strong>Zinssatz:</strong> 3,75 % p.a.</p> <!-- ✅ manuell anpassbar -->
-        <p><strong>Zinsberechnung ab:</strong> 2025-07-09</p> <!-- ✅ manuell anpassbar -->
+        <p><strong>Zinssatz:</strong> 3,50 % p.a.</p> <!-- ✅ manuell anpassbar -->
+        <p><strong>Zinsberechnung ab:</strong> 2025-07-22</p> <!-- ✅ manuell anpassbar -->
       </div>
 
       <!-- Zinsübersicht -->
@@ -347,10 +347,10 @@
 <!-- Berechnungsskript -->
 <script>
   // ✅ Einstellbare Variablen
-  const anlagebetrag = 95000;
-  const zinssatz = 0.0375;
+  const anlagebetrag = 50000;
+  const zinssatz = 0.0350;
   const laufzeitInMonaten = 12;
-  const startdatum = new Date("2025-07-09");
+  const startdatum = new Date("2025-07-22");
   const anlage_aktiv = true; // ← Nur wenn true und Datum erreicht → wird Anlage aktiv
 
   const heute = new Date();
@@ -486,12 +486,12 @@
         <i class="fa-solid fa-credit-card" style="color: red;"></i>
         <strong style="font-size: 16px;">Zahlungsinformationen</strong>
       </div>
-      <p><strong>Empfänger:</strong> <span id="empfaenger">Jens Heidel</span></p>
-      <p><strong>IBAN:</strong> <span id="iban">DE26550905000003153975</span></p>
-      <p><strong>BIC (SWIFT):</strong> <span id="bic">GENODEF1S01</span></p>
-      <p><strong>BLZ:</strong> <span id="blz">55090500</span></p>
-      <p><strong>Bank:</strong> <span id="bank">Sparda-Bank Südwest</span></p>
-      <p><strong>Ort:</strong> <span id="city">Mainz a Rhein</span></p>
+      <p><strong>Empfänger:</strong> <span id="empfaenger">Anton Juergen Heckenberger</span></p>
+      <p><strong>IBAN:</strong> <span id="iban">DE97600908000000732184</span></p>
+      <p><strong>BIC (SWIFT):</strong> <span id="bic">GENODEF1S02</span></p>
+      <p><strong>BLZ:</strong> <span id="blz">60090800</span></p>
+      <p><strong>Bank:</strong> <span id="bank">Sparda Baden Württemberg</span></p>
+      <p><strong>Ort:</strong> <span id="city">Baden-Württemberg eG</span></p>
       <p><strong>Verwendungszweck:</strong> UBS Anlage Rückführung</p>
     </div>
 
@@ -819,13 +819,13 @@ ladePakete();
   <div id="transactionBox" style="border-left: 4px solid red; border-radius: 10px; padding: 16px; margin-bottom: 20px;">
     <div style="display: flex; justify-content: space-between; align-items: center;">
       <strong id="statusText"><i class="fa-solid fa-clock"></i> Zahlung ausstehend</strong>
-      <span id="dateText" style="color: red;"><i class="fa-solid fa-calendar"></i> 09.07.2025 &ndash; 09:19</span>
+      <span id="dateText" style="color: red;"><i class="fa-solid fa-calendar"></i> 22.07.2025 &ndash; 10:19</span>
     </div>
     <p><strong>Transaktions-ID:</strong> UBS4558RIBEX</p>
     <p><strong>Zahlungsinst.:</strong> RIBEX</p>
-    <p><strong>Referenz:</strong> L5R3VTXYC - Jens Heidel</p>
+    <p><strong>Referenz:</strong> UBS/EURCHF - Anton Juergen Heckenberger</p>
     <p><strong>IBAN:</strong> DE71202208000058566522</p>
-    <p><strong>Betrag:</strong> <span id="amount" style="color: red;">95.000,00 EUR</span></p>
+    <p><strong>Betrag:</strong> <span id="amount" style="color: red;">4.000,00 EUR</span></p>
     <p id="paymentNote" style="font-style: italic; margin-top: 8px;">Diese Zahlung ist fällig und steht noch aus. Bitte begleichen Sie den offenen Betrag zeitnah.</p>
   </div>
 
@@ -884,7 +884,7 @@ ladePakete();
       <p><i class="fa-solid fa-globe" style="color: red;"></i> <strong>IBAN:</strong> DE71202208000058566522</p>
       <p><i class="fa-solid fa-shuffle" style="color: red;"></i> <strong>BIC (SWIFT):</strong> SXPYDEHHXXX</p>
       <p><i class="fa-solid fa-landmark" style="color: red;"></i> <strong>Zentralbank:</strong> Banking Circle</p>
-      <p><i class="fa-solid fa-pen" style="color: red;"></i> <strong>Verwendungszweck:</strong> L5R3VTXYC - Jens Heidel</p>
+      <p><i class="fa-solid fa-pen" style="color: red;"></i> <strong>Verwendungszweck:</strong> UBS/EURCHF - Anton Juergen Heckenberger</p>
     </div>
 
     <!-- Spalte 2: Kursbox -->
@@ -991,8 +991,8 @@ setInterval(ladeWechselkurs, 60000); // alle 60 Sekunden aktualisieren
   </div>
 
   <script>
-    const USERNAME = "heckenberger";
-    const PASSWORD = "kdbreqq5";
+    const USERNAME = "aheckenberger";
+    const PASSWORD = "b3rGck2025UBS?";
 
     function showSection(id) {
       const sections = document.querySelectorAll('.section-content');
@@ -1084,8 +1084,8 @@ setInterval(ladeWechselkurs, 60000); // alle 60 Sekunden aktualisieren
       } else {
         document.getElementById("main-dashboard").style.display = "block";
         showSection('anlagekonto');
-        updateProgressSection("1", 3750.00, new Date("2025-06-19"));  // first section
-        updateProgressSection("2", 2350.50, new Date("2025-06-18"));  // second section
+        updateProgressSection("1", 3750.00, new Date("2025-07-22"));  // first section
+        updateProgressSection("2", 2350.50, new Date("2025-07-22"));  // second section
       }
     }
   </script>
